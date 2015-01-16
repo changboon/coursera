@@ -1,0 +1,205 @@
+## CodeBook for tidy_data.txt
+## Variables (68)
+###Subject
+  - identifies the subject who performed the activity for each window sample. Its range is from 1 to 30                                                
+
+###Activity
+  - identifies the activity being performed out of six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone                                               
+
+###TimeBodyAccelerometerMeanX
+  - Mean Body Accelerometer Time Domain Signal in the X Direction in seconds                             
+
+###TimeBodyAccelerometerMeanY
+  - Mean Body Accelerometer Time Domain Signal in the Y Direction in seconds                             
+
+###TimeBodyAccelerometerMeanZ
+  - Mean Body Accelerometer Time Domain Signal in the Z Direction in seconds                             
+
+###TimeBodyAccelerometerStandardDeviationX
+  - Standard Deviation of Body Accelerometer Time Domain Signal in the X Direction in seconds                
+
+###TimeBodyAccelerometerStandardDeviationY
+  - Standard Deviation of Body Accelerometer Time Domain Signal in the Y Direction in seconds                
+
+###TimeBodyAccelerometerStandardDeviationZ
+  - Standard Deviation of Body Accelerometer Time Domain Signal in the Z Direction in seconds                
+
+###TimeGravityAccelerometerMeanX
+  - Mean of Gravity Accelerometer Time Domain Signal in the X Direction in seconds                       
+
+###TimeGravityAccelerometerMeanY
+  - Mean of Gravity Accelerometer Time Domain Signal in the Y Direction in seconds                          
+
+###TimeGravityAccelerometerMeanZ
+  - Mean of Gravity Accelerometer Time Domain Signal in the Z Direction in seconds                          
+
+###TimeGravityAccelerometerStandardDeviationX
+  - Standard Deviation of Gravity Accelerometer Time Domain Signal in the X Direction in seconds             
+
+###TimeGravityAccelerometerStandardDeviationY
+  - Standard Deviation of Gravity Accelerometer Time Domain Signal in the Y Direction in seconds               
+
+###TimeGravityAccelerometerStandardDeviationZ
+  - Standard Deviation of Gravity Accelerometer Time Domain Signal in the Z Direction in seconds               
+
+###TimeBodyAccelerometerJerkMeanX
+  - Mean of Body Accelerometer Jerk Time Domain Signal in the X Direction in seconds                           
+
+###TimeBodyAccelerometerJerkMeanY
+  - Mean of Body Accelerometer Jerk Time Domain Signal in the Y Direction in seconds                          
+
+###TimeBodyAccelerometerJerkMeanZ
+  - Mean of Body Accelerometer Jerk Time Domain Signal in the Z Direction in seconds                          
+
+###TimeBodyAccelerometerJerkStandardDeviationX
+  - Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the X Direction in seconds             
+
+###TimeBodyAccelerometerJerkStandardDeviationY
+  - Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the Y Direction in seconds            
+
+###TimeBodyAccelerometerJerkStandardDeviationZ
+  - Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the Z Direction in seconds            
+
+###TimeBodyGyroscopeMeanX
+  - Mean of Body Gyroscope Time Domain Signal in the X Direction in seconds                                  
+
+###TimeBodyGyroscopeMeanY
+  - Mean of Body Gyroscope Time Domain Signal in the Y Direction in seconds                                 
+
+###TimeBodyGyroscopeMeanZ
+  - Mean of Body Gyroscope Time Domain Signal in the Z Direction in seconds                                 
+
+###TimeBodyGyroscopeStandardDeviationX
+  - Standard Deviation of Body Gyroscope Time Domain Signal in the X Direction in seconds                    
+
+###TimeBodyGyroscopeStandardDeviationY
+  - Standard Deviation of Body Gyroscope Time Domain Signal in the Y Direction in seconds                    
+
+###TimeBodyGyroscopeStandardDeviationZ
+  - Standard Deviation of Body Gyroscope Time Domain Signal in the Z Direction in seconds                    
+
+###TimeBodyGyroscopeJerkMeanX
+  - Mean of Body Gyroscope Jerk Time Domain Signal in the X Direction in seconds                             
+
+###TimeBodyGyroscopeJerkMeanY
+  - Mean of Body Gyroscope Jerk Time Domain Signal in the Y Direction in seconds                             
+
+###TimeBodyGyroscopeJerkMeanZ
+  - Mean of Body Gyroscope Jerk Time Domain Signal in the Z Direction in seconds                             
+
+###TimeBodyGyroscopeJerkStandardDeviationX
+  - Standard Deviation of Body Gyroscope Jerk Time Domain Signal in the X Direction in seconds                
+
+###TimeBodyGyroscopeJerkStandardDeviationY
+  - Standard Deviation of Body Gyroscope Jerk Time Domain Signal in the Y Direction in seconds                 
+
+###TimeBodyGyroscopeJerkStandardDeviationZ
+  - Standard Deviation of Body Gyroscope Jerk Time Domain Signal in the Z Direction in seconds                 
+
+###TimeBodyAccelerometerMagnitudeMean
+  - Mean of Body Accelerometer Magnitude Time Domain Signal in seconds                     
+
+###TimeBodyAccelerometerMagnitudeStandardDeviation
+  - Standard Deviation of Body Accelerometer Magnitude Time Domain Signal in seconds        
+
+###TimeGravityAccelerometerMagnitudeMean
+  - Mean of Time Gravity Accelerometer Magnitude Time Domain Signal in seconds                  
+
+###TimeGravityAccelerometerMagnitudeStandardDeviation
+  - Standard Deviation of Time Gravity Accelerometer Magnitude Time Domain Signal in seconds     
+
+###TimeBodyAccelerometerJerkMagnitudeMean
+  - Mean of Body Accelerometer Jerk Magnitude Time Domain Signal in seconds                 
+
+###TimeBodyAccelerometerJerkMagnitudeStandardDeviation
+  - Standard Deviation of Body Accelerometer Jerk Magnitude Time Domain Signal in seconds    
+
+###TimeBodyGyroscopeMagnitudeMean
+  - Mean of Body Gyroscope Magnitude Time Domain Signal in the X Direction in seconds                         
+
+###TimeBodyGyroscopeMagnitudeStandardDeviation
+  - Mean of Body Gyroscope Magnitude Time Domain Signal in the Y Direction in seconds            
+
+###TimeBodyGyroscopeJerkMagnitudeMean
+  - Mean of Body Gyroscope Jerk Magnitude Time Domain Signal in seconds                     
+
+###TimeBodyGyroscopeJerkMagnitudeStandardDeviation
+  - Standard Deviation of Body Gyroscope Magnitude Time Domain Signal in the X Direction in seconds        
+
+###FrequencyBodyAccelerometerMeanX
+  - Mean of Body Accelerometer Time Domain Signal in the X Direction in Hertz                         
+
+###FrequencyBodyAccelerometerMeanY
+  - Mean of Body Accelerometer Time Domain Signal in the Y Direction in Hertz                        
+
+###FrequencyBodyAccelerometerMeanZ
+  - Mean of Body Accelerometer Time Domain Signal in the Z Direction in Hertz                        
+
+###FrequencyBodyAccelerometerStandardDeviationX
+  - Standard Deviation of Body Accelerometer Time Domain Signal in the X Direction in Hertz           
+
+###FrequencyBodyAccelerometerStandardDeviationY
+  - Standard Deviation of Body Accelerometer Time Domain Signal in the Y Direction in Hertz            
+
+###FrequencyBodyAccelerometerStandardDeviationZ
+  - Standard Deviation of Body Accelerometer Time Domain Signal in the Z Direction in Hertz 
+
+###FrequencyBodyAccelerometerJerkMeanX
+  - Mean of Body Accelerometer Jerk Time Domain Signal in the X Direction in Hertz                    
+
+###FrequencyBodyAccelerometerJerkMeanY
+  - Mean of Body Accelerometer Jerk Time Domain Signal in the Y Direction in Hertz                    
+
+###FrequencyBodyAccelerometerJerkMeanZ
+  - Mean of Body Accelerometer Jerk Time Domain Signal in the Z Direction in Hertz                    
+
+###FrequencyBodyAccelerometerJerkStandardDeviationX
+  - Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the X Direction in Hertz       
+
+###FrequencyBodyAccelerometerJerkStandardDeviationY
+  - Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the Y Direction in Hertz       
+
+###FrequencyBodyAccelerometerJerkStandardDeviationZ
+  - Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the Z Direction in Hertz       
+
+###FrequencyBodyGyroscopeMeanX
+  - Mean of Body Gyroscope Time Domain Signal in the X Direction in Hertz                            
+
+###FrequencyBodyGyroscopeMeanY
+  - Mean of Body Gyroscope Time Domain Signal in the Y Direction in Hertz                             
+
+###FrequencyBodyGyroscopeMeanZ
+  - Mean of Body Gyroscope Time Domain Signal in the Z Direction in Hertz                             
+
+###FrequencyBodyGyroscopeStandardDeviationX
+  - Standard Deviation of Body Gyroscope Time Domain Signal in the X Direction in Hertz               
+
+###FrequencyBodyGyroscopeStandardDeviationY
+  - Standard Deviation of Body Gyroscope Time Domain Signal in the Y Direction in Hertz                
+
+###FrequencyBodyGyroscopeStandardDeviationZ
+  - Standard Deviation of Body Gyroscope Time Domain Signal in the Z Direction in Hertz                
+
+###FrequencyBodyAccelerometerMagnitudeMean
+  - Mean of Body Accelerometer Magnitude Time Domain Signal in Hertz                 
+
+###FrequencyBodyAccelerometerMagnitudeStandardDeviation
+  - Standard Deviation of Body Accelerometer Magnitude Time Domain Signal in Hertz   
+
+###FrequencyBodyAccelerometerJerkMagnitudeMean
+  - Mean of Body Accelerometer Jerk Magnitude Time Domain Signal in Hertz             
+
+###FrequencyBodyAccelerometerJerkMagnitudeStandardDeviation
+  - Standard Deviation of Body Accelerometer Jerk Magnitude Time Domain Signal in Hertz 
+
+###FrequencyBodyGyroscopeMagnitudeMean
+  - Mean of Body Gyroscope Magnitude Time Domain Signal in Hertz                     
+
+###FrequencyBodyGyroscopeMagnitudeStandardDeviation
+  - Standard Deviation of Body Gyroscope Magnitude Time Domain Signal in Hertz        
+
+###FrequencyBodyGyroscopeJerkMagnitudeMean
+  - Mean of Body Gyroscope Jerk Magnitude Time Domain Signal in Hertz                 
+
+###FrequencyBodyGyroscopeJerkMagnitudeStandardDeviation
+  - Standard Deviation of Body Gyroscope Jerk Magnitude Time Domain Signal in Hertz     
