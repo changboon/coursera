@@ -6,23 +6,24 @@ library(ggplot2)
 library(plyr)
 
 stormData <- data.table(read.csv(".//repdata-data-StormData.csv"))
+names(stormData) <- tolower(names(stormData))
 
-#EVTYPE FATALITIES INJURIES 
-pophealth <- stormData[, list(FATALITIES=sum(FATALITIES), INJURIES=sum(INJURIES)), by=list(EVTYPE)]
-pophealth <- mutate(pophealth, TotalHarm = FATALITIES + INJURIES)
-totalHarm <- subset(pophealth[order(-rank(TotalHarm))], , select=c(EVTYPE, TotalHarm))[1:10] 
-totalHarm <- melt(totalHarm, id="EVTYPE")
-fatalities <- subset(pophealth[order(-rank(FATALITIES))], , select=c(EVTYPE, FATALITIES))[1:10] 
-fatalities <- melt(fatalities, id="EVTYPE")
-injuries <- subset(pophealth[order(-rank(INJURIES))], , select=c(EVTYPE, INJURIES))[1:10] 
-injuries <- melt(injuries, id="EVTYPE")
+#evtype fatalities injuries 
+pophealth <- stormData[, list(fatalities=sum(fatalities), injuries=sum(injuries)), by=list(evtype)]
+pophealth <- mutate(pophealth, casualties = fatalities + injuries)
+casualties <- subset(pophealth[order(-rank(casualties))], , select=c(evtype, casualties))[1:10] 
+ <- melt(totalHarm, id="evtype")
+fatalities <- subset(pophealth[order(-rank(fatalities))], , select=c(evtype, fatalities))[1:10] 
+fatalities <- melt(fatalities, id="evtype")
+injuries <- subset(pophealth[order(-rank(injuries))], , select=c(evtype, injuries))[1:10] 
+injuries <- melt(injuries, id="evtype")
 pophealth <- rbind(totalHarm, fatalities, injuries)
 
-tornado <- pophealth[pophealth$EVTYPE == "TORNADO",]
-pophealth <- pophealth[pophealth$EVTYPE != "TORNADO",] #remove tornado because most are from tornado
+tornado <- pophealth[pophealth$evtype == "TORNADO",]
+pophealth <- pophealth[pophealth$evtype != "TORNADO",] #remove tornado because most are from tornado
 
 png("pophealth.png", width= 800, height=640)
-ggplot(data=pophealth, aes(x=reorder(EVTYPE, -value), y=value)) + 
+ggplot(data=pophealth, aes(x=reorder(evtype, -value), y=value)) + 
   geom_bar(stat="identity") +
   facet_grid(variable ~ .) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
@@ -30,11 +31,14 @@ ggplot(data=pophealth, aes(x=reorder(EVTYPE, -value), y=value)) +
   ylab("Number affected (Pax)")
 dev.off()
 
-head(pophealth)
+match_char <- c("K", "M", "B")
+exp10 <- 10 ^ c(3, 6, 9, 0)
 
-#EVTYPE PROPDMG PROPDMGEXP CROPDMG CROPDMGEXP
+
+
+#evtype PROPDMG PROPDMGEXP CROPDMG CROPDMGEXP
 econ <- stormData[, list(PROPDMG=sum(PROPDMG), PROPDMGEXP=sum(PROPDMGEXP), CROPDMG=sum(CROPDMG), CROPDMGEXP=sum(CROPDMGEXP))
-                  , by=list(EVTYPE)]
-econ <- melt(econ, id="EVTYPE")
+                  , by=list(evtype)]
+econ <- melt(econ, id="evtype")
 head(econ)
 
